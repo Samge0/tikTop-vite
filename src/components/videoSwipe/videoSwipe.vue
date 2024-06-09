@@ -184,7 +184,7 @@ onMounted(() => {
     margin: 0 auto;
     position: relative;
   }
-  .product_swiper {
+  /* .product_swiper {
     width: 100vw;
     height: 100vh;
   }
@@ -197,6 +197,27 @@ onMounted(() => {
     left: 0;
     top: 0;
     overflow: hidden;
+  } */
+
+  .product_swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the swiper item takes full height */
+  }
+
+  .video_container {
+    width: 100%; /* Make sure the container takes full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video_box {
+    width: 100%; /* Video takes full width */
+    height: auto; /* Height auto to maintain aspect ratio */
+    max-height: 100%; /* Ensure video doesn't exceed container height */
+    object-fit: contain; /* Ensure video is contained within container */
   }
 
   .background-play{
